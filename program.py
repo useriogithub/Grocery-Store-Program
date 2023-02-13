@@ -41,7 +41,7 @@ class GroceryStore:
             }
         
     def display_departments(self):
-        print("List of departments:")
+        print("Here are the list of departments:")
         for department in self.departments:
             print(department)
             
@@ -102,29 +102,28 @@ while True:
         store.display_departments()
     elif choice == '2':
         department = input("Enter the department name: ")
-        store.display_items(department)
-        #chosen_departmnet = input()
+        store.display_items(department)       
+        print('All done')
+#this needs to go into the departments which display items
+
+#second while loop?
+
+
+        #chosen_department = input()
     elif choice == '3':
         department = input("Enter the department name: ")
         item = input("Enter the item name: ")
-        store.add_item(department, item)
+    
+#item needs to be added from cart from choice 2
+
+
     elif choice == '4':
         store.display_cart(cart)
     else:
-            break
-            print('Thank you for shopping with us!')
+        print('Thank you for shopping with us!')
+        break
         
         
-items = input("Enter the name of the item you want to add to your cart: ")
-if items.lower() == 'done':
-    if items in GroceryStore:
-        cart.append(items)
-else:
-    print(f"Sorry, {items} is not an item we have in stock.")
-    
-    print('Here are the items in your cart:')
-    for item, price in cart:
-        print(item)
         
         
-              
+        
